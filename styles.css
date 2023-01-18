@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.material-symbols-outlined {
+	display: flex;
+	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	border: none;
+	outline: nono;
+	background: none;
+}
+
+header {
+	background-color: rgba(0 0 0 / 0.2);
+	text-align: center;
+	padding-block: 20px;
+	margin-bottom: 60px;
+}
+
+main {
+	width: min(90%, 700px);
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input-area {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 30px;
+	align-items: flex-end;
+}
+
+.input-area input {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #000;
+	padding: 10px 5px;
+}
+
+.input-area .add-btn,
+.done-edit-btn {
+	font-size: 16px;
+	border: 2px solid #000;
+	padding: 4px 12px;
+	cursor: pointer;
+}
+
+.done-edit-btn {
+	display: none;
+}
+
+.input-area button:hover {
+	background-color: rgba(0 0 0 / 0.1);
+}
+
+.nothing-msg {
+	font-style: italic;
+	font-size: 24px;
+	font-weight: 100;
+	margin-top: 30px;
+	color: #818181;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 80%;
+}
+
+.todos li {
+	background-color: rgba(0 0 0 / 0.1);
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+	align-items: center;
+	position: relative;
+}
+
+.todos li div {
+	display: flex;
+	align-items: center;
+}
+
+.todos li button {
+	border-radius: 50%;
+	padding: 4px;
+	cursor: pointer;
+	transition: background-color 0.4s;
+}
+
+.todos li button:hover {
+	background-color: rgba(130 130 130 / 0.2);
+}
+
+@media (min-width: 768px) {
+	.input-area input {
+		font-size: 20px;
+	}
+
+	.input-area .add-btn,
+	.done-edit-btn {
+		font-size: 18px;
+	}
+
+	.todos li {
+		padding: 16px;
+	}
+}
